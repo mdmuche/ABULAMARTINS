@@ -118,7 +118,7 @@ header .footer p span {
   width: 40px;
   height: 40px;
   color: white;
-  background-color: var(--themeColor);
+  background-color: var(--sideBGColor);
   text-align: center;
   line-height: 42px;
   border-radius: 50%;
@@ -267,6 +267,7 @@ main {
 }
 #about .about-col .info-col .sub-para a {
   color: royalblue;
+  text-transform: lowercase;
 }
 #about .about-col .info-col h2 {
   color: var(--iconBGColor);
@@ -635,6 +636,12 @@ main {
   font-size: 14px;
   font-weight: 500;
 }
+#service .service-row .service-box .ser-info h4 + p::after {
+  content: ".";
+}
+#service .service-row .service-box .ser-info h4 + p::first-letter {
+  text-transform: uppercase;
+}
 /* mobile view */
 @media only screen and (max-width: 850px) {
   #services {
@@ -764,7 +771,8 @@ main {
     padding: 50px 10px;
   }
   #contact .contact-row .contact-right form input[type="submit"] {
-    width: 100%;
+    padding: 10px;
+    width: 80%;
   }
 }
 /* ===== contact section end ===== */
