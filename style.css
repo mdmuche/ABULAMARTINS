@@ -52,14 +52,14 @@ header .profile .social-icons a {
   border-radius: 50%;
   text-align: center;
   line-height: 37px;
-  background-color: royalblue;
+  background-color: var(--iconBGColor);
   color: white;
   font-size: 18px;
   margin: 1.5px;
   transition: 0.4s;
 }
 header .profile .social-icons a:hover {
-  background-color: var(--themeColor);
+  background-color: royalblue;
 }
 
 /* navbar */
