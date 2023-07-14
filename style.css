@@ -45,6 +45,10 @@ header .profile h1 {
   color: white;
   font-weight: 600;
 }
+.web-icon {
+  color: royalblue;
+  background-color: royalblue;
+}
 header .profile .social-icons a {
   display: inline-block;
   width: 36px;
