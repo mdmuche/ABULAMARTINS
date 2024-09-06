@@ -336,9 +336,9 @@ main {
 #skill .skills-box .skills-flex p {
   color: var(--sideBGColor);
 }
-#skill .skills-box .skills-flex.html i {
-  color: orange;
-  padding: 10px 0;
+#skill .skills-box .skills-flex.html img {
+  width: 80px;
+  height: 50px;
 }
 #skill .skills-box .skills-flex.html:hover {
   box-shadow: 4px 4px 20px rgba(0, 0, 0, 20%);
@@ -346,9 +346,13 @@ main {
   padding: 10px;
   transition: 1s;
 }
-#skill .skills-box .skills-flex.css i {
-  color: blue;
-  padding: 10px 0;
+#skill .skills-box .skills-flex.css img {
+  width: 80px;
+  height: 50px;
+}
+#skill .skills-box .skills-flex.react img {
+  width: 80px;
+  height: 50px;
 }
 #skill .skills-box .skills-flex.css:hover {
   box-shadow: 4px 4px 20px rgba(0, 0, 0, 20%);
