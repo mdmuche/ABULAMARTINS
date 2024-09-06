@@ -166,25 +166,44 @@ main {
 #home {
   height: 100vh;
   width: 100%;
-  background-image: url(img/about.jpg);
-  background-size: cover;
-  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 70px;
   position: relative;
+  z-index: 1;
+  overflow: hidden; /* Prevents scrollbars from showing due to absolute positioning */
 }
-/* overlay */
+
+/* Blurred background image with overlay */
 #home::before {
   content: "";
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.432);
+  background-image: url(img/about.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
   position: absolute;
   top: 0;
   left: 0;
+  z-index: -1; /* Keep it behind the content */
+  filter: blur(10px); /* Blur effect */
+  opacity: 0.6; /* Slight opacity for the image */
 }
+
+/* Overlay */
+#home::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.432); /* Dark overlay */
+  z-index: -1; /* Keep the overlay behind the content but above the blurred image */
+}
+
 #home .home-row {
   z-index: 1;
 }
@@ -336,60 +355,17 @@ main {
 #skill .skills-box .skills-flex p {
   color: var(--sideBGColor);
 }
-#skill .skills-box .skills-flex.html img {
+#skill .skills-box .skills-flex.img-icon img {
   width: 80px;
   height: 50px;
 }
-#skill .skills-box .skills-flex.html:hover {
+#skill .skills-box .skills-flex.img-icon:hover {
   box-shadow: 4px 4px 20px rgba(0, 0, 0, 20%);
   border-radius: 18px;
   padding: 10px;
   transition: 1s;
 }
-#skill .skills-box .skills-flex.css img {
-  width: 80px;
-  height: 50px;
-}
-#skill .skills-box .skills-flex.react img {
-  width: 80px;
-  height: 50px;
-}
-#skill .skills-box .skills-flex.css:hover {
-  box-shadow: 4px 4px 20px rgba(0, 0, 0, 20%);
-  border-radius: 18px;
-  padding: 10px;
-  transition: 1s;
-}
-#skill .skills-box .skills-flex.javascript i {
-  color: #eeee14;
-  padding: 10px 0;
-}
-#skill .skills-box .skills-flex.javascript:hover {
-  box-shadow: 4px 4px 20px rgba(0, 0, 0, 20%);
-  border-radius: 18px;
-  padding: 10px;
-  transition: 1s;
-}
-#skill .skills-box .skills-flex.react i {
-  color: rgb(64, 64, 109);
-  padding: 10px 0;
-}
-#skill .skills-box .skills-flex.react:hover {
-  box-shadow: 4px 4px 20px rgba(0, 0, 0, 20%);
-  border-radius: 18px;
-  padding: 10px;
-  transition: 1s;
-}
-#skill .skills-box .skills-flex.bootstrap i {
-  color: rgb(64, 64, 109);
-  padding: 10px 0;
-}
-#skill .skills-box .skills-flex.bootstrap:hover {
-  box-shadow: 4px 4px 20px rgba(0, 0, 0, 20%);
-  border-radius: 18px;
-  padding: 10px;
-  transition: 1s;
-}
+
 #skill .skills-box .skills-divider {
   border-bottom: 1px solid #ccc;
 }
@@ -537,20 +513,24 @@ main {
   color: var(--bgColor);
   font-size: 14px;
 }
+#portfolio .port-row .port-item .port-info .url_link {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
 #portfolio .port-row .port-item .port-info a {
   text-decoration: none;
   display: inline-block;
-  font-size: 20px;
-  width: 45px;
-  height: 45px;
+  font-size: 15px;
   background-color: var(--bgColor);
-  border-radius: 50%;
-  color: var(--themeColor);
+  border-radius: 8px;
+  color: var(--sideBGColor);
   line-height: 45px;
   transition: 0.4s;
 }
 #portfolio .port-row .port-item .port-info a:hover {
-  background-color: var(--sideBGColor);
+  background-color: royalblue;
   color: var(--bgColor);
 }
 @media only screen and (max-width: 650px) {
