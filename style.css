@@ -342,32 +342,36 @@ main {
 #skill {
   padding: 70px 30px;
 }
-#skill .skills-box {
-  padding: 20px 15px;
-}
-#skill .skills-box .skills-flex {
-  display: flex;
-  justify-content: space-between;
-  font-size: 30px;
-  font-weight: 400;
-  color: var(--bgColor);
-}
-#skill .skills-box .skills-flex p {
-  color: var(--sideBGColor);
-}
-#skill .skills-box .skills-flex.img-icon img {
-  width: 80px;
-  height: 50px;
-}
-#skill .skills-box .skills-flex.img-icon:hover {
-  box-shadow: 4px 4px 20px rgba(0, 0, 0, 20%);
-  border-radius: 18px;
-  padding: 10px;
-  transition: 1s;
+
+/* GRID LAYOUT */
+.skills-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
 }
 
-#skill .skills-box .skills-divider {
-  border-bottom: 1px solid #ccc;
+/* EACH ICON CARD */
+.skill-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 15px;
+  background: #f9f9f9;
+  transition: 0.3s ease;
+}
+
+/* ICON SIZE */
+.skill-item img {
+  width: 60px;
+  height: 60px;
+}
+
+/* HOVER EFFECT 🔥 */
+.skill-item:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 /* ===== skills section end ===== */
 
