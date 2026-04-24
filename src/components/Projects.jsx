@@ -40,7 +40,12 @@ export default function Projects({ projects }) {
         {/* PROJECT GRID */}
         <div className="mt-14 grid gap-8 lg:grid-cols-2">
           {filteredProjects.map((project, index) => (
-            <ProjectCard key={project.title} project={project} index={index} />
+            <ProjectCard
+              key={project.title}
+              project={project}
+              filter={filter}
+              index={index}
+            />
           ))}
         </div>
       </div>

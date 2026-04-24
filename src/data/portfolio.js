@@ -70,6 +70,29 @@ export const skillGroups = [
 ];
 
 export const projects = [
+  // Fullstack
+  {
+    title: "NaijaPrice Tracker (Market Intelligence Platform)",
+    type: "fullstack",
+    description:
+      "A location-aware market intelligence platform that provides real-time commodity prices across Nigerian markets, helping users make informed purchasing decisions and reduce price exploitation.",
+    techStack: ["React", "Node.js", "Express", "MongoDB", "JWT"],
+    features: [
+      "Location-based price feed (State → LGA → Market filtering)",
+      "Real-time commodity price tracking with historical trends",
+      "Unit standardization system (Mudu, Paint Bucket → KG conversion)",
+      "Crowdsourced price submissions with reputation scoring",
+      "Price trend analytics (daily changes and percentage insights)",
+      "Offline-first support with data sync for low-connectivity environments",
+      "JWT authentication and role-based user system",
+      "Geolocation and geofencing for accurate market detection",
+    ],
+    liveDemo: "https://naijaprice.vercel.app",
+    githubUrl: "https://github.com/mdmuche/naijaprice-frontend",
+    image: "/img/naipricehome.PNG",
+  },
+
+  // Backend
   {
     title: "Scalable Notes API",
     type: "backend",
@@ -125,28 +148,6 @@ export const projects = [
     ],
     githubUrl: "https://github.com/mdmuche/quiz-api",
     image: "/img/quiz-api.png",
-  },
-
-  // FULLSTACK
-  {
-    title: "NaijaPrice Tracker (Market Intelligence Platform)",
-    type: "fullstack",
-    description:
-      "A location-aware market intelligence platform that provides real-time commodity prices across Nigerian markets, helping users make informed purchasing decisions and reduce price exploitation.",
-    techStack: ["React", "Node.js", "Express", "MongoDB", "JWT"],
-    features: [
-      "Location-based price feed (State → LGA → Market filtering)",
-      "Real-time commodity price tracking with historical trends",
-      "Unit standardization system (Mudu, Paint Bucket → KG conversion)",
-      "Crowdsourced price submissions with reputation scoring",
-      "Price trend analytics (daily changes and percentage insights)",
-      "Offline-first support with data sync for low-connectivity environments",
-      "JWT authentication and role-based user system",
-      "Geolocation and geofencing for accurate market detection",
-    ],
-    liveDemo: "https://naijaprice.vercel.app",
-    githubUrl: "https://github.com/mdmuche/naijaprice-frontend",
-    image: "/img/naipricehome.PNG",
   },
 ];
 

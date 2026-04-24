@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-export default function ProjectCard({ project, index }) {
+export default function ProjectCard({ project, index, filter }) {
   return (
     <motion.article
       initial={{ opacity: 0, y: 28 }}
@@ -67,7 +67,10 @@ export default function ProjectCard({ project, index }) {
         </div>
 
         <div className="mt-6 space-y-3">
-          {project.features.map((feature) => (
+          {(filter === "all"
+            ? project.features.slice(0, 3)
+            : project.features
+          ).map((feature) => (
             <div
               key={feature}
               className="flex gap-3 text-sm text-slate-600 dark:text-slate-300"

@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tailwindcss/line-clamp": "^0.4.4",
     "framer-motion": "latest",
     "react": "latest",
     "react-dom": "latest"
