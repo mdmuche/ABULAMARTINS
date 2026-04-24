@@ -102,8 +102,8 @@ export default function Navbar({
                   onClick={() => setIsMenuOpen(false)}
                   className={`rounded-2xl px-4 py-3 text-sm font-medium transition ${
                     activeSection === item.id
-                      ? "bg-slate-900 text-white dark:bg-white dark:text-slate-950"
-                      : "text-slate-600 hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-white/10"
+                      ? "bg-slate-900 text-white"
+                      : "text-slate-600 hover:bg-slate-100"
                   }`}
                 >
                   {item.label}

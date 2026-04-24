@@ -65,9 +65,9 @@ export default function Hero({ stats, socialLinks }) {
             transition={{ duration: 0.55, delay: 0.25 }}
             className="mt-6 max-w-2xl text-lg leading-8 text-slate-600 dark:text-slate-300"
           >
-            I’m Abula Martins, a full-stack JavaScript developer focused on
-            secure backend systems, thoughtful interfaces, and clean product
-            execution for teams shipping globally.
+            I’m Abula Martins Onyemuche, a full-stack JavaScript developer
+            focused on secure backend systems, thoughtful interfaces, and clean
+            product execution for teams shipping globally.
           </motion.p>
 
           <motion.div
@@ -128,7 +128,7 @@ export default function Hero({ stats, socialLinks }) {
               />
             </div>
 
-            <div className="mt-6 grid gap-4 sm:grid-cols-3">
+            <div className="mt-6 grid gap-4 sm:grid-cols-2">
               {stats.map((item) => (
                 <div
                   key={item.label}

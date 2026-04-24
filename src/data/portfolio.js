@@ -27,7 +27,6 @@ export const socialLinks = [
 
 export const heroStats = [
   { value: "2+", label: "Years building production-ready JavaScript apps" },
-  { value: "4", label: "Backend APIs featured in this portfolio" },
   {
     value: "End-to-end",
     label: "Product thinking across frontend and backend",
