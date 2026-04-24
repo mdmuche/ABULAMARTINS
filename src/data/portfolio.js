@@ -71,56 +71,82 @@ export const skillGroups = [
 
 export const projects = [
   {
-    title: "Notes API",
+    title: "Scalable Notes API",
+    type: "backend",
     description:
-      "A structured backend for note creation, organization, and account-based content management with a clean API surface.",
+      "A production-ready backend for managing user-specific notes with secure authentication and modular architecture.",
     techStack: ["NestJS", "TypeScript", "MongoDB", "JWT"],
     features: [
-      "Authentication and protected routes",
-      "CRUD workflows for personal notes",
-      "Scalable module-based backend structure",
+      "JWT-based authentication and route protection",
+      "Modular architecture using NestJS structure",
+      "Full CRUD operations with user-level data isolation",
     ],
     githubUrl: "https://github.com/mdmuche/notes-api",
     image: "/img/notes-api.png",
   },
   {
-    title: "Meal Planning API",
+    title: "Meal Planning & Nutrition API",
+    type: "backend",
     description:
-      "An API focused on planning and managing meal routines with resources designed for structured nutrition workflows.",
+      "A structured API for managing meal plans and nutritional workflows, designed to support scalable health applications.",
     techStack: ["Express.js", "Node.js", "MongoDB", "Mongoose"],
     features: [
-      "Meal plan creation and updates",
-      "Persistent data storage for planning flows",
-      "Organized endpoint design for future app clients",
+      "Meal plan creation and structured data storage",
+      "RESTful API design for client integration",
+      "Flexible schema for nutrition-based applications",
     ],
     githubUrl: "https://github.com/mdmuche/meal-planning-api",
     image: "/img/meal-planning-api.png",
   },
   {
-    title: "E-commerce API",
+    title: "E-commerce Backend System",
+    type: "backend",
     description:
-      "A commerce-focused backend that supports product, customer, and order workflows for scalable online retail experiences.",
+      "A commerce backend handling products, users, and order workflows, designed for integration with modern storefronts.",
     techStack: ["Express.js", "Node.js", "MongoDB", "REST"],
     features: [
-      "Product and catalog management",
-      "Order-oriented API workflows",
-      "Designed for integration with modern storefronts",
+      "Product and inventory management",
+      "Order processing workflows",
+      "Structured API design for scalable commerce apps",
     ],
     githubUrl: "https://github.com/mdmuche/my-ecommerce-api",
     image: "/img/ecommerce-api.png",
   },
   {
-    title: "Quiz API",
+    title: "Quiz Management API",
+    type: "backend",
     description:
-      "A backend service for quiz management, question delivery, and scoring-ready logic that can power learning applications.",
+      "A backend service for managing quizzes, questions, and scoring logic for educational or assessment platforms.",
     techStack: ["Express.js", "Node.js", "MongoDB", "JavaScript"],
     features: [
-      "Question and quiz resource management",
-      "Flexible structure for educational products",
-      "Simple API surface for frontend integrations",
+      "Quiz and question resource management",
+      "Structured endpoints for frontend consumption",
+      "Flexible design for learning applications",
     ],
     githubUrl: "https://github.com/mdmuche/quiz-api",
     image: "/img/quiz-api.png",
+  },
+
+  // FULLSTACK
+  {
+    title: "NaijaPrice Tracker (Market Intelligence Platform)",
+    type: "fullstack",
+    description:
+      "A location-aware market intelligence platform that provides real-time commodity prices across Nigerian markets, helping users make informed purchasing decisions and reduce price exploitation.",
+    techStack: ["React", "Node.js", "Express", "MongoDB", "JWT"],
+    features: [
+      "Location-based price feed (State → LGA → Market filtering)",
+      "Real-time commodity price tracking with historical trends",
+      "Unit standardization system (Mudu, Paint Bucket → KG conversion)",
+      "Crowdsourced price submissions with reputation scoring",
+      "Price trend analytics (daily changes and percentage insights)",
+      "Offline-first support with data sync for low-connectivity environments",
+      "JWT authentication and role-based user system",
+      "Geolocation and geofencing for accurate market detection",
+    ],
+    liveDemo: "https://naijaprice.vercel.app",
+    githubUrl: "https://github.com/mdmuche/naijaprice-frontend",
+    image: "/img/naipricehome.PNG",
   },
 ];
 

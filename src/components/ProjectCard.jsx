@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
 export default function ProjectCard({ project, index }) {
   return (
@@ -18,7 +18,9 @@ export default function ProjectCard({ project, index }) {
       </div>
 
       <div className="p-7">
-        <div className="flex items-start justify-between gap-4">
+        <div
+          className={`flex ${project.liveDemo ? "flex-col" : "flex-row"} items-start justify-between gap-4`}
+        >
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.28em] text-sky-600 dark:text-sky-400">
               Backend API
@@ -27,15 +29,26 @@ export default function ProjectCard({ project, index }) {
               {project.title}
             </h3>
           </div>
-
-          <a
-            href={project.githubUrl}
-            target="_blank"
-            rel="noreferrer"
-            className="rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-slate-950 hover:text-slate-950 dark:border-white/10 dark:bg-white/5 dark:text-slate-200 dark:hover:border-white dark:hover:text-white"
-          >
-            GitHub
-          </a>
+          <div className="flex gap-2">
+            <a
+              href={project.githubUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-slate-950 hover:text-slate-950 dark:border-white/10 dark:bg-white/5 dark:text-slate-200 dark:hover:border-white dark:hover:text-white"
+            >
+              GitHub
+            </a>
+            {project.liveDemo && (
+              <a
+                href={project.liveDemo}
+                target="_blank"
+                rel="noreferrer"
+                className="rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-slate-950 hover:text-slate-950 dark:border-white/10 dark:bg-white/5 dark:text-slate-200 dark:hover:border-white dark:hover:text-white"
+              >
+                Live Demo
+              </a>
+            )}
+          </div>
         </div>
 
         <p className="mt-5 text-base leading-7 text-slate-600 dark:text-slate-300">
@@ -55,7 +68,10 @@ export default function ProjectCard({ project, index }) {
 
         <div className="mt-6 space-y-3">
           {project.features.map((feature) => (
-            <div key={feature} className="flex gap-3 text-sm text-slate-600 dark:text-slate-300">
+            <div
+              key={feature}
+              className="flex gap-3 text-sm text-slate-600 dark:text-slate-300"
+            >
               <span className="mt-1.5 h-2.5 w-2.5 rounded-full bg-sky-500 dark:bg-sky-400" />
               <span>{feature}</span>
             </div>
