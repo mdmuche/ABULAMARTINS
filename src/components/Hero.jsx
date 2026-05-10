@@ -83,7 +83,7 @@ export default function Hero({ stats, socialLinks }) {
               Explore selected work
             </a>
             <a
-              href="/files/Abula_Martins_Onyemuche_Resume_2026-03-20.pdf"
+              href="/files/Martins_Onyemuche_Abula_Resume.pdf"
               className="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white/80 px-6 py-3 text-sm font-semibold text-slate-700 transition hover:-translate-y-0.5 hover:border-slate-950 hover:text-slate-950 dark:border-white/15 dark:bg-white/5 dark:text-slate-200 dark:hover:border-white dark:hover:text-white"
               target="_blank"
               rel="noreferrer"
