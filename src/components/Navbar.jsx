@@ -21,14 +21,14 @@ export default function Navbar({
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
           <a href="#home" className="flex items-center gap-3">
             <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-slate-900 text-sm font-semibold text-white shadow-[0_20px_45px_-30px_rgba(15,23,42,0.7)] dark:bg-white dark:text-slate-950">
-              AM
+              MD
             </span>
             <span className="hidden sm:block">
               <span className="block text-sm font-medium uppercase tracking-[0.28em] text-slate-500 dark:text-slate-400">
                 Full-Stack Engineer
               </span>
               <span className="block font-serif text-2xl text-slate-950 dark:text-white">
-                Abula Martins Onyemuche
+                Martins Onyemuche Abula
               </span>
             </span>
           </a>

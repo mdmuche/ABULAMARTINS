@@ -52,7 +52,11 @@ export default function Hero({ stats, socialLinks }) {
                 initial="hidden"
                 animate="visible"
                 variants={wordVariants}
-                className={`mr-3 inline-block ${word === "premium" ? "font-serif italic text-sky-600 dark:text-sky-400" : ""}`}
+                className={`mr-3 inline-block ${
+                  word === "premium"
+                    ? "font-serif italic text-sky-600 dark:text-sky-400"
+                    : ""
+                }`}
               >
                 {word}
               </motion.span>
@@ -65,7 +69,7 @@ export default function Hero({ stats, socialLinks }) {
             transition={{ duration: 0.55, delay: 0.25 }}
             className="mt-6 max-w-2xl text-lg leading-8 text-slate-600 dark:text-slate-300"
           >
-            I’m Abula Martins Onyemuche, a full-stack JavaScript developer
+            I’m Martins Onyemuche Abula, a full-stack JavaScript developer
             focused on secure backend systems, thoughtful interfaces, and clean
             product execution for teams shipping globally.
           </motion.p>
@@ -120,14 +124,6 @@ export default function Hero({ stats, socialLinks }) {
         >
           <div className="absolute inset-6 rounded-[2rem] bg-gradient-to-br from-sky-500/20 via-transparent to-amber-400/20 blur-2xl" />
           <div className="relative overflow-hidden rounded-[2rem] border border-white/60 bg-white/80 p-6 shadow-[0_30px_80px_-30px_rgba(15,23,42,0.25)] backdrop-blur dark:border-white/10 dark:bg-slate-900/70">
-            <div className="overflow-hidden rounded-[1.5rem] bg-slate-950">
-              <img
-                src="/img/dp1.PNG"
-                alt="Portrait of Abula Martins"
-                className="h-[360px] w-full object-cover object-top"
-              />
-            </div>
-
             <div className="mt-6 grid gap-4 sm:grid-cols-2">
               {stats.map((item) => (
                 <div

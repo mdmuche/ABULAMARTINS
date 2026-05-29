@@ -17,7 +17,7 @@ export default function Contact({ contactDetails }) {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.5 }}
-            className="rounded-[2rem] border border-slate-200/70 bg-white/80 p-4 shadow-[0_30px_80px_-40px_rgba(15,23,42,0.25)] backdrop-blur dark:border-white/10 dark:bg-slate-900/70"
+            className="rounded-[2rem] border-slate-200/70 bg-white/80 p-4 shadow-[0_30px_80px_-40px_rgba(15,23,42,0.25)] backdrop-blur dark:border-white/10 dark:bg-slate-900/70"
           >
             <div className="grid gap-5 sm:grid-cols-2">
               {contactDetails.map((item) => (
@@ -26,12 +26,12 @@ export default function Contact({ contactDetails }) {
                   href={item.href}
                   target={item.href.startsWith("http") ? "_blank" : undefined}
                   rel={item.href.startsWith("http") ? "noreferrer" : undefined}
-                  className="rounded-[1.5rem] border border-slate-200 bg-slate-50 p-5 transition hover:-translate-y-1 dark:border-white/10 dark:bg-white/5"
+                  className="min-w-0 rounded-[1.5rem] border border-slate-200 bg-slate-50 p-5 transition hover:-translate-y-1 dark:border-white/10 dark:bg-white/5"
                 >
                   <p className="text-sm uppercase tracking-[0.26em] text-slate-500 dark:text-slate-400">
                     {item.label}
                   </p>
-                  <p className="mt-3 text-lg font-semibold text-slate-950 dark:text-white">
+                  <p className="mt-3 break-words text-lg font-semibold text-slate-950 dark:text-white">
                     {item.value}
                   </p>
                 </a>

@@ -11,27 +11,13 @@ export default function About() {
           description="I build backend systems with reliability in mind and pair them with polished user experiences that feel intentional, fast, and easy to trust."
         />
 
-        <div className="mt-14 grid gap-8 lg:grid-cols-[0.95fr_1.05fr]">
-          <motion.div
-            initial={{ opacity: 0, y: 28 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.5 }}
-            className="overflow-hidden rounded-[2rem] border border-slate-200/70 bg-white/80 shadow-[0_25px_70px_-35px_rgba(15,23,42,0.25)] backdrop-blur dark:border-white/10 dark:bg-slate-900/60"
-          >
-            <img
-              src="/img/about.jpg"
-              alt="Creative workspace background"
-              className="h-full min-h-[320px] w-full object-cover"
-            />
-          </motion.div>
-
+        <div className="mt-14 flex justify-center">
           <motion.div
             initial={{ opacity: 0, y: 28 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.55, delay: 0.08 }}
-            className="grid gap-6"
+            className="grid gap-6 w-full max-w-3xl"
           >
             <div className="rounded-[2rem] border border-slate-200/70 bg-white/80 p-8 shadow-[0_25px_70px_-35px_rgba(15,23,42,0.25)] backdrop-blur dark:border-white/10 dark:bg-slate-900/60">
               <p className="text-base leading-8 text-slate-600 dark:text-slate-300">
