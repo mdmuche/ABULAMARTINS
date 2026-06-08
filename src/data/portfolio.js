@@ -72,8 +72,30 @@ export const skillGroups = [
 export const projects = [
   // Fullstack
   {
-    title: "NaijaPrice Tracker (Market Intelligence Platform)",
+    title: "Movent (An Event Ticketing Platform)",
     type: "fullstack",
+    description:
+      "Movent is a modern event discovery and ticketing platform that helps people find, save, and attend events while giving organizers powerful tools to create, manage, and promote memorable experiences.",
+    techStack: ["React", "Node.js", "Express", "MongoDB", "Cookies"],
+    features: [
+      "Users can explore upcoming events, view details, and search for experiences that match their interests",
+      "Organizers can create, update, and manage events, including event information, dates, locations, pricing, and media",
+      "Attendees can purchase tickets and manage their event registrations through the platform",
+      "Users have access to a dashboard displaying their activity, purchased tickets, saved events, and account information",
+      "Users can bookmark events they are interested in and revisit them later.",
+      "Users can update their profile, bio, profile picture, notification preferences, and language settings",
+      "Different user roles (such as attendees, organizers, and administrators) have access to specific features and permissions.",
+      "The platform includes email verification, password reset functionality, notification preferences, and account recovery/reactivation during the account grace periodGeolocation and geofencing for accurate market detection.",
+    ],
+    liveDemo: "https://joinmovent.com",
+    githubUrl: "https://github.com/mdmuche/movent-frontend",
+    image: "/img/movent-landing.PNG",
+  },
+
+  // Frontend
+  {
+    title: "NaijaPrice Tracker (Market Intelligence Platform)",
+    type: "frontend",
     description:
       "A location-aware market intelligence platform that provides real-time commodity prices across Nigerian markets, helping users make informed purchasing decisions and reduce price exploitation.",
     techStack: ["React", "Node.js", "Express", "MongoDB", "JWT"],
@@ -91,64 +113,63 @@ export const projects = [
     githubUrl: "https://github.com/mdmuche/naijaprice-frontend",
     image: "/img/naipricehome.PNG",
   },
-
   // Backend
-  {
-    title: "Scalable Notes API",
-    type: "backend",
-    description:
-      "A production-ready backend for managing user-specific notes with secure authentication and modular architecture.",
-    techStack: ["NestJS", "TypeScript", "MongoDB", "JWT"],
-    features: [
-      "JWT-based authentication and route protection",
-      "Modular architecture using NestJS structure",
-      "Full CRUD operations with user-level data isolation",
-    ],
-    githubUrl: "https://github.com/mdmuche/notes-api",
-    image: "/img/notes-api.png",
-  },
-  {
-    title: "Meal Planning & Nutrition API",
-    type: "backend",
-    description:
-      "A structured API for managing meal plans and nutritional workflows, designed to support scalable health applications.",
-    techStack: ["Express.js", "Node.js", "MongoDB", "Mongoose"],
-    features: [
-      "Meal plan creation and structured data storage",
-      "RESTful API design for client integration",
-      "Flexible schema for nutrition-based applications",
-    ],
-    githubUrl: "https://github.com/mdmuche/meal-planning-api",
-    image: "/img/meal-planning-api.png",
-  },
-  {
-    title: "E-commerce Backend System",
-    type: "backend",
-    description:
-      "A commerce backend handling products, users, and order workflows, designed for integration with modern storefronts.",
-    techStack: ["Express.js", "Node.js", "MongoDB", "REST"],
-    features: [
-      "Product and inventory management",
-      "Order processing workflows",
-      "Structured API design for scalable commerce apps",
-    ],
-    githubUrl: "https://github.com/mdmuche/my-ecommerce-api",
-    image: "/img/ecommerce-api.png",
-  },
-  {
-    title: "Quiz Management API",
-    type: "backend",
-    description:
-      "A backend service for managing quizzes, questions, and scoring logic for educational or assessment platforms.",
-    techStack: ["Express.js", "Node.js", "MongoDB", "JavaScript"],
-    features: [
-      "Quiz and question resource management",
-      "Structured endpoints for frontend consumption",
-      "Flexible design for learning applications",
-    ],
-    githubUrl: "https://github.com/mdmuche/quiz-api",
-    image: "/img/quiz-api.png",
-  },
+  // {
+  //   title: "Scalable Notes API",
+  //   type: "backend",
+  //   description:
+  //     "A production-ready backend for managing user-specific notes with secure authentication and modular architecture.",
+  //   techStack: ["NestJS", "TypeScript", "MongoDB", "JWT"],
+  //   features: [
+  //     "JWT-based authentication and route protection",
+  //     "Modular architecture using NestJS structure",
+  //     "Full CRUD operations with user-level data isolation",
+  //   ],
+  //   githubUrl: "https://github.com/mdmuche/notes-api",
+  //   image: "/img/notes-api.png",
+  // },
+  // {
+  //   title: "Meal Planning & Nutrition API",
+  //   type: "backend",
+  //   description:
+  //     "A structured API for managing meal plans and nutritional workflows, designed to support scalable health applications.",
+  //   techStack: ["Express.js", "Node.js", "MongoDB", "Mongoose"],
+  //   features: [
+  //     "Meal plan creation and structured data storage",
+  //     "RESTful API design for client integration",
+  //     "Flexible schema for nutrition-based applications",
+  //   ],
+  //   githubUrl: "https://github.com/mdmuche/meal-planning-api",
+  //   image: "/img/meal-planning-api.png",
+  // },
+  // {
+  //   title: "E-commerce Backend System",
+  //   type: "backend",
+  //   description:
+  //     "A commerce backend handling products, users, and order workflows, designed for integration with modern storefronts.",
+  //   techStack: ["Express.js", "Node.js", "MongoDB", "REST"],
+  //   features: [
+  //     "Product and inventory management",
+  //     "Order processing workflows",
+  //     "Structured API design for scalable commerce apps",
+  //   ],
+  //   githubUrl: "https://github.com/mdmuche/my-ecommerce-api",
+  //   image: "/img/ecommerce-api.png",
+  // },
+  // {
+  //   title: "Quiz Management API",
+  //   type: "backend",
+  //   description:
+  //     "A backend service for managing quizzes, questions, and scoring logic for educational or assessment platforms.",
+  //   techStack: ["Express.js", "Node.js", "MongoDB", "JavaScript"],
+  //   features: [
+  //     "Quiz and question resource management",
+  //     "Structured endpoints for frontend consumption",
+  //     "Flexible design for learning applications",
+  //   ],
+  //   githubUrl: "https://github.com/mdmuche/quiz-api",
+  //   image: "/img/quiz-api.png",
+  // },
 ];
 
 export const contactDetails = [

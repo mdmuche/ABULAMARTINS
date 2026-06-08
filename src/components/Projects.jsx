@@ -5,7 +5,7 @@ import { useState } from "react";
 export default function Projects({ projects }) {
   const [filter, setFilter] = useState("all");
 
-  const filters = ["all", "fullstack", "backend"];
+  const filters = ["all", "fullstack", "frontend"];
 
   const filteredProjects =
     filter === "all" ? projects : projects.filter((p) => p.type === filter);
@@ -15,7 +15,8 @@ export default function Projects({ projects }) {
         <SectionHeading
           eyebrow="Projects"
           title="Selected Work"
-          description="A combination of fullstack applications and backend systems demonstrating real-world engineering and scalable API design."
+          description="A combination of fullstack and frontend application"
+          // description="A combination of fullstack, frontend applications and backend systems demonstrating real-world engineering and scalable API design."
         />
         {/* FILTER TABS */}
         <div className="mt-10 flex flex-wrap gap-3">
