@@ -21,7 +21,7 @@ export default function About() {
           >
             <div className="rounded-[2rem] border border-slate-200/70 bg-white/80 p-8 shadow-[0_25px_70px_-35px_rgba(15,23,42,0.25)] backdrop-blur dark:border-white/10 dark:bg-slate-900/60">
               <p className="text-base leading-8 text-slate-600 dark:text-slate-300">
-                With 2+ years of experience across Node.js, Express.js, MongoDB,
+                With years of experience across Node.js, Express.js, MongoDB,
                 and React, I care about building systems that are easy to
                 maintain, pleasant to use, and strong enough for real-world
                 growth. I especially enjoy API architecture, clean project
