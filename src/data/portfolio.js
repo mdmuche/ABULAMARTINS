@@ -26,10 +26,13 @@ export const socialLinks = [
 ];
 
 export const heroStats = [
-  { value: "2+", label: "Years building production-ready JavaScript apps" },
+  {
+    value: "Production",
+    label: "Years building production-ready JavaScript apps",
+  },
   {
     value: "End-to-end",
-    label: "Product thinking across frontend and backend",
+    label: "Engineering modern web applications",
   },
 ];
 
