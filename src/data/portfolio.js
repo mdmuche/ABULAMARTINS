@@ -182,8 +182,8 @@ export const contactDetails = [
     href: "mailto:abulamartins@gmail.com",
   },
   {
-    label: "Location",
-    value: "Lagos, Nigeria",
-    href: "https://maps.google.com/?q=Lagos,Nigeria",
+    label: "Work Preference",
+    value: "Remote / Hybrid",
+    href: "#contact",
   },
 ];
