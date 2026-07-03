@@ -92,7 +92,7 @@ export const projects = [
     ],
     liveDemo: "https://joinmovent.com",
     githubUrl: "https://github.com/mdmuche/movent-frontend",
-    image: "/img/movent-landing.PNG",
+    image: "/img/movent-landing1.PNG",
   },
 
   // Frontend
